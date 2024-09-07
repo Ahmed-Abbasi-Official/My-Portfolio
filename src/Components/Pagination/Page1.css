@@ -1,0 +1,24 @@
+.slide .swiper-button-next,
+.slide .swiper-button-prev {
+  width: 30px !important; /* Adjust width of arrows */
+  height: 30px !important; /* Adjust height of arrows */
+}
+ .swiper-button-next,
+ .swiper-button-prev {
+  width: 30px !important; /* Adjust width of arrows */
+  height: 30px !important; /* Adjust height of arrows */
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important; /* Adjust arrow icon size */
+}
+
+.small .swiper-button-next::after,
+.small .swiper-button-prev::after {
+  font-size: 50px !important; /* Adjust arrow icon size */
+}
+
+/*  */

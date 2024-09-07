@@ -1,0 +1,32 @@
+.navbar-visible {
+  right: 0; /* Visible state, fully in the viewport */
+}
+
+.navbar-hidden {
+  right: -100%; /* Hidden state, above the viewport */
+}
+
+.hover-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hover-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  top:35px;
+  bottom: 0;
+  left: 0;
+  background-color: #0db4c7d6;
+  transform-origin: bottom right;
+  transition: transform .3s ease-out;
+}
+
+.hover-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
