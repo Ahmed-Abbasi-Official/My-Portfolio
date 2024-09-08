@@ -117,8 +117,80 @@ const Page = () => {
   // }, [loading, data]);
 
   const pages = [
+    {
+      page: (
+        <>
+          <div
+            className="lg:py-6  flex flex-col justify-center items-center p-8  lg:w-[500px] max-1337:w-full max-1337:text-xl "
+            style={{
+              backgroundImage:
+                "linear-gradient(to bottom left, #90c4ca3a, #d29e7f54, #90c4ca3a)",
+              // Full width of the container
+            }}
+          >
+            <div className="flex justify-center items-center">
+              <Swiper
+                spaceBetween={30}
+                navigation
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 1000 }}
+                modules={[Navigation, Pagination, Autoplay]}
+                className="rounded lg:w-[30vw] w-[70vw] lg:h-[12vw] h-[50vw]"
+              >
+                <SwiperSlide>
+                  <img
+                    src="./Images/1.png"
+                    className="rounded    "
+                    alt="Slide 1"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="./Images/2.png"
+                    className="rounded    "
+                    alt="Slide 1"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="./Images/3.png"
+                    className="rounded    "
+                    alt="Slide 1"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="./Images/4.png"
+                    className="rounded    "
+                    alt="Slide 1"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="./Images/5.png"
+                    className="rounded    "
+                    alt="Slide 1"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div>
+              <h3 className="font-semibold text-2xl py-3">Chat App</h3>
+              <p className=" ">
+              Developed a real-time chat application using React and Firebase. Integrated various libraries including Redux Toolkit for state management, Appwrite for backend services, and React-Toastify for notifications. The app features user authentication, real-time messaging, and a responsive design.
+              </p>
+            </div>
+            <a href="https://abbasi-chatapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <Button
+                className="px-6 mt-8 py-3 bg-[#0db4c7d6] text-white font-semibold text-sm"
+                children={"Visit Website"}
+              />
+            </a>
+          </div>
+        </>
+      ),
+    },
     
-   
     {
       page: (
         <>
@@ -396,7 +468,6 @@ const Page = () => {
         </>
       ),
     },
-  
   ];
 
   return (
@@ -431,3 +502,4 @@ const Page = () => {
 };
 
 export default Page;
+
